@@ -1,0 +1,15 @@
+{
+  "name": "jquery-scrollbox",
+  "homepage": "https://github.com/wmh/jquery-scrollbox",
+  "version": "1.1.0",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.0",
+    "commit": "56b429dff4b936e6a3340339802fca156891ff5c"
+  },
+  "_source": "https://github.com/wmh/jquery-scrollbox.git",
+  "_target": "~1.1.0",
+  "_originalSource": "https://github.com/wmh/jquery-scrollbox.git",
+  "_direct": true
+}
