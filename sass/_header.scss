@@ -5,11 +5,19 @@
 //顶级页头小条
 .site-header{
 	border-bottom: 1px solid $borderColor;
+
 	a{
-		font-size: 30px;
 		line-height: 80px;
-		text-decoration: none;
+			text-decoration: none;
 	}
+
+	a.site-title{
+		
+			font-size: 30px;
+			
+	
+	}
+	
 }
 
 .site-footer{
