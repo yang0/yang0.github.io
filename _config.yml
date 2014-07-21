@@ -1,0 +1,13 @@
+# Site settings
+title: 云雀团队开发案例
+qq: QQ:137962
+description: "云雀团队：成员三名，纯技术，坐标杭州，一起创业多年。以前开发作品以web和桌面客户端为主，目前正在向移动端方向靠拢。欢迎有市场和运营资源的团队一起合作创业，<strong>QQ137962</strong>"
+baseurl: ""
+yunque361: "http://www.yunque361.com"
+baohuabiji: "http://www.baohuabiji.com"
+qianwantao: "http://zhonghuasuan.yunque360.com"
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty

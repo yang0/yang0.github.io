@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+/*
+@import "compass/reset";
+*/
+
+@import "compass/css3";
+@import "compass/typography";
+@import "variable";
+
+
+
+
+.gray{
+    color: #999;
+}
+
+body{
+    line-height:normal !important;
+    font-size: 14px;
+    
+}
+
+li{list-style: none outside none;}
+
+body, textarea {
+    font-family: "helvetica neue",helvetica,arial,Sans-serif,"Hiragino Sans GB","Hiragino Sans GB W3","SimHei";
+    background-color: white;
+}
+
+.width-10{
+    width:10% !important;
+}
+.width-15{
+    width:15% !important;
+}
+.width-25{
+    width:25% !important;
+}
+.w980{
+    width:980px;
+    margin:0px auto; 
+}
+
+
+.mw1000{
+    min-width:1000px;
+}
+.w1000{
+    width:1000px;
+    margin: 0 auto;
+}
+.w1190{
+    width:1190px;
+    margin: 0 auto;
+}
+
+.w700{
+    width:700px;
+    margin: 0 auto;
+}
+
+.error-tip{
+    color:#DD5A43 !important;
+    display:inline-block !important;
+}
+.error-tip ul{
+    margin:5px 5px;
+}
+.error-tip ul li {
+    display:inline-block !important;
+    padding-right:5px;
+}
+
+a{
+	@include link-colors($linkColor, $deepColor);
+}
+
+
+h1 {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 26px;
+    font-weight: normal;
+    margin:0;
+    padding:0;
+    line-height: 40px;
+}
+
+h3 {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin:0;
+    padding:0;
+}
+
+h4 {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h5 {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h6 {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+ul,ol{
+    padding:0;
+}
+body, div, span{
+	font-size: 12px;
+}
+.space-4 {
+    margin: 4px 0 3px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-6 {
+    margin: 6px 0 5px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-8 {
+    margin: 8px 0 7px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-10 {
+    margin: 10px 0 9px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-12 {
+    margin: 12px 0 11px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-14 {
+    margin: 14px 0 13px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-16 {
+    margin: 16px 0 15px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-18 {
+    margin: 18px 0 17px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.space-20 {
+    margin: 20px 0 19px;
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.no-padding-right{
+   padding-right:0 !important;
+}
+.no-padding-left{
+   padding-left:0 !important;
+}
+
+
+.dark {
+    color: #333333 !important;
+}
+.white {
+    color: #FFFFFF !important;
+}
+.red {
+    color: #DD5A43 !important;
+}
+.light-red {
+    color: #FF7777 !important;
+}
+.blue {
+    color: #478FCA !important;
+}
+.light-blue {
+    color: #93CBF9 !important;
+}
+.green {
+    color: #69AA46 !important;
+}
+.light-green {
+    color: #B0D877 !important;
+}
+.orange {
+    color: #FF892A !important;
+}
+.light-orange {
+    color: #FCAC6F !important;
+}
+.orange2 {
+    color: #FEB902 !important;
+}
+.purple {
+    color: #A069C3 !important;
+}
+.pink {
+    color: #C6699F !important;
+}
+.pink2 {
+    color: #D6487E !important;
+}
+.brown {
+    color: #A52A2A !important;
+}
+.grey {
+    color: #777777 !important;
+}
+.light-grey {
+    color: #BBBBBB !important;
+}
+
+@mixin lineHeight($value: 30px){
+	height: $value;
+	line-height: $value;
+}
+
+@mixin headerBar($height, $bgColor, $color){
+	@include lineHeight($height);
+	background-color: $bgColor;
+	color: $color;
+}
+
+@mixin deepHeaderBar(){
+	@include headerBar(36px, $deepColor, #fff);
+}
+
+@mixin lightHeaderBar(){
+	@include headerBar(31px, $lightColor, $deepColor);
+	font-size:14px;
+}
+
+@mixin whiteHeaderBar(){
+	@include headerBar(36px, #fff, #222);
+}
+
+@mixin greenHeaderBar(){
+	@include headerBar(36px, #2304ef, #fff);
+}
+
+@mixin deepBorder(){
+	border:2px solid $deepColor;
+}
+
+@mixin lightBorder(){
+    border:1px solid #D6D6D6;
+}
+
+@mixin grayBox(){
+	border: 1px solid #eaeaea;
+	background-color: #f8f8f8;
+}
+
+//基本框架
+.leftCol{
+    width:210px;
+    display:block;
+    float:left;
+    margin-right: 10px;
+    
+}
+.middleCol{
+    width:710px;
+    float:left;
+    display:block;
+}
+.leftMiddleCol{
+	width:930px;
+	float:left;
+	display:block;
+}
+.rightCol{
+    width:250px;
+    float:right;
+    display:block;
+}
+
+
+
+
+.w{
+	margin-bottom:10px;
+	line-height: 18px;
+}
+.w:after{
+	content:'\20';
+	clear:both;
+	display:block;
+}
+
+
+.p-price{
+	strong{
+		font-size: 20px;
+		font-weight: bold;
+		color: $color;
+	}
+	del{
+		margin-left: 2px;
+		font-size:12px;
+		font-weight: normal;
+		color: #999;
+	}
+}
+
+
+.ui-separator {
+    height: 18px;
+    border: 0;
+    border-right: 1px solid #ccc;
+    margin:0 8px;
+}
+
+
+.btn{
+    @include border-radius(5px);
+}
+
+.btn-site{
+    background-color: $btnColor!important;
+    border-color: $btnColor;
+    color:#FFFFFF !important;
+}
+.btn-site:hover{
+    background-color: #5CB85C !important;
+    border-color: #4CAE4C;
+    color:#FFFFFF !important;
+}
+.inline {
+    display:inline-block !important;
+}
+.position-relative{
+    position:relative !important;
+}
+.position-absolute{
+    position:absolute !important;
+}
+.text-underline {
+    text-decoration:underline;
+}
+.right-toolbar{
+    position:absolute !important;
+    top:0;
+    right:0;
+}

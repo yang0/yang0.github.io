@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@import "base";
+
+//顶级页头小条
+.site-header{
+	border-bottom: 1px solid $borderColor;
+	a{
+		font-size: 30px;
+		line-height: 80px;
+		text-decoration: none;
+	}
+}
+
+.site-footer{
+	background-color: $borderColor;
+	height: 200px;
+	padding-top: 50px;
+	
+
+	div{
+		font-size: 16px;
+		color: #999;
+	}
+}
